@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Tue Dec 06 01:27:19 UTC 2022:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0184-e50b-6155-000007500000 
-on database directory C:\Users\david\OneDrive\Documents\GitHub\CECS-491A-Project-MealSteal\TestApacheDatabase\CreateDatabase with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a 
-Loaded from file:/C:/Users/david/AppData/Roaming/JetBrains/DataGrip2021.2/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
+Tue Dec 06 02:35:05 UTC 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0184-e549-6334-000007609958 
+on database directory C:\Users\theod\Desktop\ghit\CECS-491A-Project-MealSteal\TestApacheDatabase\CreateDatabase with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a 
+Loaded from file:/C:/Users/theod/AppData/Roaming/JetBrains/DataGrip2021.3/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=JetBrains s.r.o.
-java.runtime.version=11.0.12+7-b1504.27
-user.dir=C:\Users\david\DataGripProjects\CECS491
+java.runtime.version=11.0.13+7-b1751.25
+user.dir=C:\Users\theod\Desktop\ghit\CECS-491A-Project-MealSteal\TestApacheDatabase\CECS491
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
