@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="CreateDatabase" uuid="bc874deb-298a-4c6a-b4e4-9407a7a90a53">
+    <data-source source="LOCAL" name="JPA PROJECT" uuid="b1a4e4a0-3b2a-48a7-a704-3929ff4e884a">
       <driver-ref>derby.embedded</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../CreateDatabase</jdbc-url>
+      <jdbc-url>jdbc:derby:JPA PROJECT</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
