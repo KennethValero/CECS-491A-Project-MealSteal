@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Dec 08 23:05:50 UTC 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0184-f3fc-ed43-000007489b90 
+on database directory D:\Downloads\CECS491JPA\JPA PROJECT with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
+Loaded from file:/C:/Users/david/AppData/Roaming/JetBrains/IntelliJIdea2022.3/jdbc-drivers/Apache%20Derby/10.14.1.0/derby-10.14.1.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=17.0.5+1-b653.14
+user.dir=D:\Downloads\CECS491JPA
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
