@@ -19,9 +19,9 @@
 
 			<!-- TODO: Change the path to the database to one that is local to your computer! -->
 			<!-- The value provided is relative to this project's top-level location -->
-			<property name="javax.persistence.jdbc.url" value="jdbc:derby:JPA PROJECT" />
-			<property name="javax.persistence.jdbc.user" value="app" /> <!-- change to appropriate username -->
-			<property name="javax.persistence.jdbc.password" value="app" /> <!-- change to appropriate password -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby:JPA PROJECT;create=true" />
+			<property name="javax.persistence.jdbc.user" value="test" /> <!-- change to appropriate username -->
+			<property name="javax.persistence.jdbc.password" value="test" /> <!-- change to appropriate password -->
 
 			<!-- MySQL Driver -->
 			<!--			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />-->
