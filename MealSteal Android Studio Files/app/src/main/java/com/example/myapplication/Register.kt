@@ -11,7 +11,9 @@ import com.google.firebase.auth.FirebaseAuth
 class Register : AppCompatActivity() {
 
     private lateinit var binding:ActivityRegisterBinding
+    private lateinit var editUser: EditText
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +23,18 @@ class Register : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
+        val spinner: Spinner = findViewById(R.id.account_type_spinner)
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+                this,
+                R.array.account_type_array,
+                android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner.adapter = adapter
+        }
         binding.btnRegister.setOnClickListener()
         {
             Toast.makeText(this, "Check if worked" , Toast.LENGTH_SHORT).show()
