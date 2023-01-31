@@ -6,4 +6,11 @@
     <string name="register">Register</string>
     <string name="registeraccount">Register</string>
     <string name="accountCreate">Create a new account</string>
+    <?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_type_array">
+        <item>Customer</item>
+        <item>Merchant</item>
+    </string-array>
+</resources>
 </resources>
