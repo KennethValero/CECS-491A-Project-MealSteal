@@ -54,7 +54,9 @@
     <Spinner
     android:id="@+id/account_type_spinner"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:spinnerMode="dropdown"
+    android:entries="@array/account_type_array" />
 
     <Button
         android:id="@+id/btnRegister"
