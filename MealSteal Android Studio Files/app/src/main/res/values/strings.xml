@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="username">Username</string>
     <string name="register">Register</string>
     <string name="registeraccount">Register</string>
     <string name="accountCreate">Create a new account</string>
-    <?xml version="1.0" encoding="utf-8"?>
     <string-array name="account_type_array">
         <item>Customer</item>
         <item>Merchant</item>
