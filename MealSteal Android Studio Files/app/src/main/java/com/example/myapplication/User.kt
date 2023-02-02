@@ -1,5 +1,5 @@
 package com.example.myapplication
-
+//We will store the information in Google Firebase Firestore
 //open lets the class be inheritable
 open class User {
     var name: String? = null
