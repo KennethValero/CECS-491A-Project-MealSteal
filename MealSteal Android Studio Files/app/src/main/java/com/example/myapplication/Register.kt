@@ -13,9 +13,12 @@ import com.google.firebase.database.FirebaseDatabase
 
 class Register : AppCompatActivity() {
 
-    private lateinit var binding:ActivityRegisterBinding
+    //private lateinit var binding:ActivityRegisterBinding
     private lateinit var editName: EditText
+    private lateinit var editEmail: EditText
+    private lateinit var editPassword: EditText
     private lateinit var user_type: String
+    private lateinit var btnReg: Button
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var database: DatabaseReference
 
@@ -23,10 +26,13 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        //binding = ActivityRegisterBinding.inflate(layoutInflater)
+        //setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
         editName = findViewById(R.id.username)
+        editEmail = findViewById(R.id.email)
+        editPassword = findViewById(R.id.password)
+        btnReg = findViewById(R.id.btnRegister)
 
         val account_type = resources.getStringArray(R.array.account_type_array)
         val spinner = findViewById<Spinner>(R.id.account_type_spinner)
@@ -43,11 +49,14 @@ class Register : AppCompatActivity() {
                 // write code to perform some action
             }
         }
-        binding.btnRegister.setOnClickListener()
+        //binding.btnRegister.setOnClickListener()
+        btnReg.setOnClickListener()
         {
             Toast.makeText(this, "Check if worked" , Toast.LENGTH_SHORT).show()
-            val email = binding.email.text.toString()
-            val password = binding.password.text.toString()
+            //val email = binding.email.text.toString()
+            val email = editEmail.text.toString()
+            //val password = binding.password.text.toString()
+            val password = editPassword.text.toString()
             val name = editName.text.toString()
 
             if(email.isNotEmpty() && password.isNotEmpty())
