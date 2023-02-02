@@ -56,7 +56,7 @@ class Register : AppCompatActivity() {
                 {
                     if (it.isSuccessful)
                     {
-                        addUserToDB(name, email, password, firebaseAuth.uid, user_type)
+                        addUserToDB(name, email, password, firebaseAuth.uid.toString(), user_type)
                         Toast.makeText(this, "Check if worked" , Toast.LENGTH_SHORT).show()
                     }
                     else
