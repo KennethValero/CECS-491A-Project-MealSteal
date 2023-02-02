@@ -8,12 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 
 class Register : AppCompatActivity() {
 
     private lateinit var binding:ActivityRegisterBinding
-    private lateinit var editUser: EditText
+    private lateinit var editName: EditText
     private lateinit var user_type: String
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var database: DatabaseReference
@@ -25,6 +26,7 @@ class Register : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
+        editName = findViewById(R.id.username)
 
         val account_type = resources.getStringArray(R.array.account_type_array)
         val spinner = findViewById<Spinner>(R.id.account_type_spinner)
@@ -46,6 +48,7 @@ class Register : AppCompatActivity() {
             Toast.makeText(this, "Check if worked" , Toast.LENGTH_SHORT).show()
             val email = binding.email.text.toString()
             val password = binding.password.text.toString()
+            val name = editName.text.toString()
 
             if(email.isNotEmpty() && password.isNotEmpty())
             {
@@ -53,6 +56,7 @@ class Register : AppCompatActivity() {
                 {
                     if (it.isSuccessful)
                     {
+                        addUserToDB(name, email, password, firebaseAuth.uid, user_type)
                         Toast.makeText(this, "Check if worked" , Toast.LENGTH_SHORT).show()
                     }
                     else
@@ -68,6 +72,9 @@ class Register : AppCompatActivity() {
         }
     }
 
-
+    private fun addUserToDB(name: String, email: String, password: String, uid: String, user_type: String) {
+        database = FirebaseDatabase.getInstance().getReference()
+        database.child("user").child(uid).setValue(User(name,email, password, uid, user_type))
+    }
 }
 
