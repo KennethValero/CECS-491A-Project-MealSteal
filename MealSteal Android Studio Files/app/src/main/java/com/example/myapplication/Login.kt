@@ -42,12 +42,15 @@ class Login : AppCompatActivity(){
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         val user = firebaseAuth.currentUser
+                        user?.let {
+                            val name = user.displayName
+                            val email = user.email
+                            val account_type =
+                        }
                     } else {
                         // If sign in fails, display a message to the user.
-                        Log.w(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(baseContext, "Authentication failed.",
                             Toast.LENGTH_SHORT).show()
-                        updateUI(null)
                     }
                 }
         }
