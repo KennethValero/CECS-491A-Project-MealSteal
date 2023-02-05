@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CECS-491A-Project-MealSteal.iml" filepath="$PROJECT_DIR$/.idea/CECS-491A-Project-MealSteal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CECS491JPA/JPA_BOOK/JPA_BOOK.iml" filepath="$PROJECT_DIR$/CECS491JPA/JPA_BOOK/JPA_BOOK.iml" />
     </modules>
   </component>
 </project>
